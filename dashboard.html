@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Kotatsu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<div class="bg-layer"></div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+
+  <!-- LEFT: MENU -->
+  <div class="left-top">
+    <div class="menu-btn" onclick="toggleMenu()">=</div>
+
+    <div class="nav-links">
+    </div>
+  </div>
+
+  <!-- LOGO -->
+  <div class="logo">Kotatsu Panel</div>
+
+  <!-- PROFILE -->
+  <div class="profile">
+    <span id="user">User</span>
+  </div>
+
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <a href="index.html">Home</a>
+  <a href="games.html">Games</a>
+  <a href="#">Service</a>
+  <a href="#">Invoice</a>
+  <a href="#" onclick="logout()">Logout</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <div class="dash-header">
+    <div>
+      <h1>Dashboard</h1>
+      <p>Selamat datang kembali </p>
+    </div>
+
+    <div class="dash-actions">
+      <button class="btn primary">+ Deploy Server</button>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <div class="dash-card">
+      <h4>Active Server</h4>
+      <h2>2</h2>
+      <span>Server berjalan</span>
+    </div>
+
+    <div class="dash-card">
+      <h4>Invoice</h4>
+      <h2>1</h2>
+      <span>Menunggu pembayaran</span>
+    </div>
+
+    <div class="dash-card">
+      <h4>Service</h4>
+      <h2>Premium</h2>
+      <span>Status aktif</span>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

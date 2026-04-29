@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kotatsu - Game Hosting</title>
+
+  
+  <!-- CSS KHUSUS GAMES -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-layer"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Kotatsu</div>
+  <nav class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="games.html">Game</a>
+    <a href="#">Pricing</a>
+  </nav>
+
+  <a href="#" onclick="goDashboard()" class="btn dashboard">Dashboard</a>
+</header>
+
+<!-- HERO PAGE -->
+<section class="hero fade-in">
+  <span class="badge">Game Hosting</span>
+  <h1>Pilih game <span>favoritmu</span></h1>
+  <p>Deploy server dengan cepat dan tanpa ribet.</p>
+</section>
+
+<!-- LIST GAME -->
+<section class="games fade-in">
+  <h2>Game Hosting</h2>
+  <p class="subtitle">Pilih server game yang ingin kamu deploy</p>
+
+  <div class="game-container">
+
+    <!-- Minecraft -->
+    <div class="card">
+      <div class="icon"></div>
+      <h3>Minecraft</h3>
+      <p>Vanilla • Paper • Forge</p>
+      <button class="btn primary">Deploy</button>
+    </div>
+
+    <!-- Rust -->
+    <div class="card">
+      <div class="icon"></div>
+      <h3>Terraria</h3>
+      <p>Optimized tick rate server</p>
+      <button class="btn primary">Deploy</button>
+    </div>
+
+    <!-- GTA / Roleplay -->
+    <div class="card">
+      <div class="icon"></div>
+      <h3>FiveM</h3>
+      <p>GTA RP Server Hosting</p>
+      <button class="btn primary">Deploy</button>
+    </div>
+
+    <!-- ARK -->
+    <div class="card">
+      <div class="icon"></div>
+      <h3>ARK Survival</h3>
+      <p>Dino survival server</p>
+      <button class="btn primary">Deploy</button>
+    </div>
+
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

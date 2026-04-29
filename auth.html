@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Auth - Kotatsu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-container">
+
+  <!-- LEFT -->
+  <div class="auth-left">
+    <h1>Kotatsu</h1>
+    <p>Modern game hosting platform with high performance & reliability.</p>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="auth-card">
+
+    <div class="auth-tabs">
+      <button id="loginTab" class="active" onclick="showLogin()">Sign In</button>
+      <button id="registerTab" onclick="showRegister()">Sign Up</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="loginForm" class="form active">
+      <h2>Sign in to your account</h2>
+
+      <input type="text" id="loginUser" placeholder="Username">
+      <input type="password" id="loginPass" placeholder="Password">
+
+      <button onclick="login()">Sign In</button>
+      <p id="loginMsg"></p>
+    </div>
+
+    <!-- REGISTER -->
+    <div id="registerForm" class="form">
+      <h2>Create your account</h2>
+
+      <input type="text" id="regUser" placeholder="Username">
+      <input type="email" id="regEmail" placeholder="Email">
+      <input type="password" id="regPass" placeholder="Password">
+      <input type="password" id="regConfirm" placeholder="Confirm Password">
+
+      <button onclick="register()">Sign Up</button>
+      <p id="regMsg"></p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
